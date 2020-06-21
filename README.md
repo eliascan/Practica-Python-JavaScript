@@ -14,4 +14,4 @@
     La practica esta hecha en python y javascript ¿en cual lenguaje es mas rapido?
 
 * Práctica tres<br />
-    
+    Calcular la nota máxima, la nota mínima y la nota promedio de la clase de trigonometría utilizando JavaScript.

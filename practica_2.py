@@ -13,8 +13,7 @@ def cases_int(exp):
                 pw = 1
             y = x / pw
             if y.is_integer():
-                # print(y)
-                counter+=1
+                counter += 1
     except:
         print("Some error happen")
     finally:
