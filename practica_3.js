@@ -57,4 +57,4 @@ for (let i = 0; i < lar; i++) {
 }
 
 let avrg = total / lar;
-console.log("La media es: " + avrg);
+console.log("La nota promedio es: " + avrg);
