@@ -3,16 +3,20 @@ In the equation below, considering that X is an integer between -10**exp and 10*
 
 Y = X / X**0.5
 */
+function caseInt(ex) {
+    var pwn = -(Math.pow(10, ex));
+    var pwp = Math.pow(10, ex);
+    var counter = 0;
+    var y = 0;
 
-var pwn = -(Math.pow(10, 9));
-var pwp = Math.pow(10, 9);
-var counter = 0;
-var y = 0;
-
-for (let i = pwn; i < pwp; i++) {
-    y = i/Math.sqrt(i);
-    if (Number.isInteger(y)) {
-        counter++; 
+    for (let i = pwn; i < pwp; i++) {
+        y = i/Math.sqrt(i);
+        if (Number.isInteger(y)) {
+            counter++; 
+        }
     }
+
+    return counter;
 }
-console.log("Number of cases in which the result is an integer: ", counter);
+
+console.log("Number of cases in which the result is an integer: ", caseInt(5));
